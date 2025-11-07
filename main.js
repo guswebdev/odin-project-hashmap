@@ -1,7 +1,10 @@
 import { HashMap } from "./HashMap.js";
+import { HashSet } from "./HashSet.js";
 
 const test = new HashMap();
+const testSet = new HashSet();
 
+//Valores de HashMap
 test.set("apple", "red");
 test.set("banana", "yellow");
 test.set("carrot", "orange");
@@ -15,20 +18,19 @@ test.set("jacket", "blue");
 test.set("kite", "pink");
 test.set("lion", "golden");
 
-test.set("elephant", "grey");
-
-test.set('moon', 'silver')
-test.set('escucho', 'musica')
-test.set('hola', 'saludo')
-test.set('hello', 'ingles')
-test.set('goodbye', 'despedida')
-/*
-test.set("apple", "blue");
-test.set("frog", "violet");
-*/
-console.table(test.entries())
-
-//console.log(test.length())
-//console.log(test.capacity)
+//Valores de HashSet
+testSet.set("apple");
+testSet.set("banana");
+testSet.set("carrot");
+testSet.set("dog");
+testSet.set("elephant");
+testSet.set("frog");
+testSet.set("grape");
+testSet.set("hat");
+testSet.set("ice cream");
+testSet.set("jacket");
+testSet.set("kite");
+testSet.set("lion");
 
 console.log(test.printTable());
+console.log(testSet.printTable());
